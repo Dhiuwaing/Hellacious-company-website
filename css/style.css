@@ -27,6 +27,10 @@ a {
   color: #fff;
 }
 
+h1, h2, h3, h4 {
+  font-family: "Poppins";
+}
+
 h1, h2 {
   font-weight: 300;
   line-height: 1.2;
@@ -206,6 +210,15 @@ img {
   object: fit;
 }
 
+/* Flex Grid */
+.flex-grid .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: .5rem;
+}
+
 /* Navbar */
 #navbar {
   background: #333;
@@ -331,5 +344,37 @@ img {
   border-radius: 50%;
   color: #fff;
   margin-bottom: 1rem;
+}
+
+/* Cases */
+#cases.section-padding {
+  padding: 20px 20px 40px 20px;
+}
+
+#cases header {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#cases header h2 {
+  font-size: 40px;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+#cases img:hover {
+  opacity: .7;
 }
 /*# sourceMappingURL=style.css.map */

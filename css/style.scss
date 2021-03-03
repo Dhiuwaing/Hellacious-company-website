@@ -26,6 +26,9 @@ a {
   color: #fff;
 }
 
+h1, h2, h3, h4 {
+  font-family: "Poppins";
+}
 h1, h2 {
   font-weight: 300;
   line-height: 1.2;
@@ -149,7 +152,36 @@ img {
       margin-bottom: 1rem;
     }
 
-    
   }
 
+
+  /* Cases */
+  #cases {
+    
+    &.section-padding {
+      padding: 20px 20px 40px 20px;
+    }
+    header {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        font-size: 40px;
+        margin: 20px 0;
+        font-weight: 700;
+      }
+    }
+    // .row {
+    //   display: grid;
+    //   grid-template-columns: repeat(4, 1fr);
+    //   grid-gap: .25rem;
+    // }
+
+    img:hover {
+      opacity: .7;
+    }
+  }
 
