@@ -84,3 +84,23 @@
   background: transparent;
   border: 1px solid #fff;
 }
+
+.flex-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // align-items: center;
+  // text-align: center;
+
+  > div {
+    padding: 20px;
+  }
+
+
+}
+

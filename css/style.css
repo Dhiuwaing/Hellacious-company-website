@@ -129,6 +129,24 @@ img {
   border: 1px solid #fff;
 }
 
+.flex-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.flex-items > div {
+  padding: 20px;
+}
+
 /* Navbar */
 #navbar {
   background: #333;
@@ -237,5 +255,22 @@ img {
 
 .hero .content h1, .hero .content p, .hero .content a {
   margin-right: 30px;
+}
+
+/* Icons */
+.icons {
+  padding: 30px;
+}
+
+.icons h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.icons i {
+  padding: 1rem;
+  border-radius: 50%;
+  color: #fff;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
