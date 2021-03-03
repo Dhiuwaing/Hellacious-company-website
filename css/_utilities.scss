@@ -64,7 +64,7 @@
 }
 
 .bg-hell {
-  background: red;
+  background: #690d0e;
   color: #fff;
 }
 
@@ -86,21 +86,62 @@
 }
 
 .flex-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%;
-
-  // display: grid;
-  // grid-template-columns: repeat(3, 1fr);
+  // display: flex;
+  // justify-content: center;
   // align-items: center;
   // text-align: center;
+  // height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  text-align: center;
 
   > div {
     padding: 20px;
   }
-
-
 }
 
+.flex-columns {
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+    }
+
+    .column-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+      height: 100%;
+      padding: 30px;
+    }
+
+    h2 {
+      font-size: 40px;
+      font-weight: 100;
+    }
+    h4 {
+      margin-bottom: 10px;
+    }
+  
+    p {
+      margin: 20px 0;
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object: fit;
+    }
+  }
+}
