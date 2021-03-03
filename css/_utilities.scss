@@ -1,3 +1,86 @@
+/* Text */
+
+.text-primary {
+  color: #28a745;
+}
+
+.text-secondary {
+  color: #0284d0;
+}
+
 .text-red {
   color: var(--primary-color);
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background-color: rgb(216, 32, 32);
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 4px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #fff;
+    opacity: .6;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.btn-form {
+  cursor: pointer;
+  display: inline-block;
+  background-color: rgb(216, 32, 32);
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 4px;
+  opacity: .6;
+
+  &:hover {
+    color: #fff;
+    opacity: .6;
+  }
+}
+
+.bg-joker,
+.btn-joker {
+  background: linear-gradient(30deg, rgb(224, 57, 57), rgb(15, 99, 15));
+  color: #fff;
+}
+
+.btn-primary,
+.bg-primary {
+  background: #28a745;
+  color: #fff;
+}
+
+.btn-secondary, 
+.bg-secondary {
+  background-color: #0284d0;
+  color: #fff;
+}
+
+.bg-hell {
+  background: red;
+  color: #fff;
+}
+
+.btn-dark, 
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.btn-light, 
+.bh-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
 }

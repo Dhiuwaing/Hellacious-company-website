@@ -75,11 +75,13 @@ img {
         color: var(--primary-color);
       }
     }
+  }  
+  
+  &.top {
+    background: transparent;
   }
 }
-  // &.top {
-  //   background: transparent;
-  // }
+
   
   /* Hero */
   .hero {

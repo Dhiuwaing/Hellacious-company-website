@@ -41,8 +41,92 @@ img {
   width: 100%;
 }
 
+/* Text */
+.text-primary {
+  color: #28a745;
+}
+
+.text-secondary {
+  color: #0284d0;
+}
+
 .text-red {
   color: var(--primary-color);
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #d82020;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 4px;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  color: #fff;
+  opacity: .6;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-form {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #d82020;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 4px;
+  opacity: .6;
+}
+
+.btn-form:hover {
+  color: #fff;
+  opacity: .6;
+}
+
+.bg-joker,
+.btn-joker {
+  background: linear-gradient(30deg, #e03939, #0f630f);
+  color: #fff;
+}
+
+.btn-primary,
+.bg-primary {
+  background: #28a745;
+  color: #fff;
+}
+
+.btn-secondary,
+.bg-secondary {
+  background-color: #0284d0;
+  color: #fff;
+}
+
+.bg-hell {
+  background: red;
+  color: #fff;
+}
+
+.btn-dark,
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.btn-light,
+.bh-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
 }
 
 /* Navbar */
@@ -91,6 +175,10 @@ img {
 
 #navbar ul li a:hover {
   color: var(--primary-color);
+}
+
+#navbar.top {
+  background: transparent;
 }
 
 /* Hero */
