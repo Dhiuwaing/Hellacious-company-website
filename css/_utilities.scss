@@ -102,6 +102,8 @@
   }
 }
 
+
+
 .flex-columns {
 
   .row {
@@ -126,6 +128,7 @@
       padding: 30px;
     }
 
+
     h2 {
       font-size: 40px;
       font-weight: 100;
@@ -144,6 +147,12 @@
       object: fit;
     }
   }
+
+  &.flex-reverse .row {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
 }
 
 /* Flex Grid */
@@ -154,7 +163,7 @@
     // padding: 0 4px;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: .5rem;
   }
 
