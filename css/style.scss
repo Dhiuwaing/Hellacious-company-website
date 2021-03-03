@@ -241,12 +241,10 @@ img {
   .flex-reverse .row {
     display: grid;
     grid-template-columns: 1fr;
-
+    // grid-gap: 1px;
   }
 
   
-
-
   .team .flex-items img {
     width: 70%;
   }

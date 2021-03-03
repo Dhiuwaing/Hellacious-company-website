@@ -109,16 +109,24 @@
 .flex-columns {
 
   .row {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    // display: flex;
+    // flex-wrap: wrap;
+    // width: 100%;
 
-    .column {
-      display: flex;
-      flex-direction: column;
-      flex-basis: 100%;
-      flex: 1;
-    }
+    // .column {
+    //   display: flex;
+    //   flex-direction: column;
+    //   flex-basis: 100%;
+    //   flex: 1;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+      .column-1,
+      .column-2 {
+        height: 100%;
+      }
+    
 
     .column-2 {
       display: flex;
