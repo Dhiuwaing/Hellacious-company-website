@@ -1,0 +1,153 @@
+:root {
+  --primary-color: #c72727;
+  --secondary-color: rgb(73, 167, 73);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins';
+  background: #fff;
+  line-height: 1.9;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Open sans";
+  color: #fff;
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  font-family: "Open Sans";
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+.text-red {
+  color: var(--primary-color);
+}
+
+/* Navbar */
+#navbar {
+  background: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  height: 70px;
+  padding: 0 30px;
+  width: 100%;
+  opacity: 0.9;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#navbar .logo {
+  font-weight: 700;
+}
+
+#navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#navbar ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#navbar ul li a {
+  padding: 1rem 1.5rem;
+  margin: 0 .3rem;
+}
+
+#navbar ul li a:hover {
+  color: var(--primary-color);
+}
+
+/* Hero */
+.hero {
+  background: url(/images/home/joker_profile.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+.hero:before {
+  position: absolute;
+  content: '';
+  background: linear-gradient(30deg, #853939, #49a749);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.hero * {
+  z-index: 1;
+}
+
+.hero .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.hero .content h1 {
+  font-size: 50px;
+}
+
+.hero .content .hell {
+  font-weight: bold;
+}
+
+.hero .content p {
+  font-size: 23px;
+  margin: 20px 0 30px 0;
+}
+
+.hero .content h1, .hero .content p, .hero .content a {
+  margin-right: 30px;
+}
+/*# sourceMappingURL=style.css.map */
