@@ -37,9 +37,12 @@
   padding: 10px 30px;
   color: #fff;
   border-radius: 4px;
+  width: 100%;
   opacity: .6;
+  border: none;
 
   &:hover {
+    background: rgb(131, 5, 5);
     color: #fff;
     opacity: .6;
   }
@@ -85,6 +88,7 @@
   border: 1px solid #fff;
 }
 
+/* Flex functions */
 .flex-items {
   // display: flex;
   // justify-content: center;
@@ -101,8 +105,6 @@
     padding: 20px;
   }
 }
-
-
 
 .flex-columns {
 
@@ -172,4 +174,25 @@
   //   max-width: 25%;
   //   padding: 0 4px;
   // }
+}
+
+/* Section padding and header */
+.section-padding {
+  padding: 20px 20px 40px 20px;
+}
+
+/* Section Header */
+.section-header {
+padding: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+h2 {
+  font-size: 40px;
+  margin: 20px 0;
+  font-weight: 700;
+}
 }

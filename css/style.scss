@@ -45,23 +45,47 @@ img {
 
 @import "utilities";
 /* Navbar */
-#navbar {
-  background: #333;
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
-  height: 70px;
   padding: 0 30px;
+  height: 70px;
+  background: #333;
+  color: #fff;
   width: 100%;
   opacity: 0.9;
   position: sticky;
   top: 0;
-  transition: all 0.5s ease;
+  transition: 0.5s ease;
+
+
+  ul {
+    display: flex;
+
+    li:hover {
+      transform: scale(1.4);
+
+      a:hover {
+        color: #28a745;
+      }
+    }
+  }
+
+  a {
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 3px;
+  }
 
   .logo {
     font-weight: 700;
   }
+
+  &.top {
+    background: transparent;
+  }
+
 
   ul {
     display: flex;
@@ -70,8 +94,8 @@ img {
       transform: scale(1.1);
     }
 
-    li a {
-      padding: 1rem 1.5rem;
+     a {
+      padding: 1rem .5rem;
       margin: 0 .3rem;
 
       &:hover {
@@ -153,35 +177,79 @@ img {
     }
 
   }
-
-
-  /* Cases */
-  #cases {
     
-    &.section-padding {
-      padding: 20px 20px 40px 20px;
-    }
-    header {
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+#team img {
+  height: 380px;
+  border-radius: 50%;
+}
 
-      h2 {
-        font-size: 40px;
-        margin: 20px 0;
-        font-weight: 700;
-      }
-    }
-    // .row {
-    //   display: grid;
-    //   grid-template-columns: repeat(4, 1fr);
-    //   grid-gap: .25rem;
-    // }
+/* Callback form */
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
 
-    img:hover {
-      opacity: .7;
+  .form-control {
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 4px;
+      border: none;
     }
   }
+
+  .btn-form {
+    margin-top: 10px;
+  }
+}
+
+@media(max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+    padding: 20px;
+
+    ul {
+      a {
+      padding: 15px;
+      // margin: 0 2px;
+      }
+    }
+
+  }
+
+  .hero {
+    .content {
+      align-items: center;
+    }
+  }
+
+  .flex-items {
+   grid-template-columns: 1fr;
+  }
+
+  .flex-columns .row,
+  .flex-grid .row, 
+  .flex-reverse .row {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
+  
+
+
+  .team .flex-items img {
+    width: 70%;
+  }
+
+}
 
